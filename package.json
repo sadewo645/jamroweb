@@ -1,0 +1,16 @@
+{
+  "name": "jamroweb",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo for palm oil plantation & mill monitoring platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run start:dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web && npm run build --workspace apps/api",
+    "lint": "npm run lint --workspace apps/web && npm run lint --workspace apps/api"
+  }
+}

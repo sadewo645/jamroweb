@@ -1,0 +1,13 @@
+{
+  "name": "jamro-api",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "node --watch src/server.js",
+    "lint": "node --check src/server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
